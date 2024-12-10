@@ -1,0 +1,254 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    width: 4px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #003A6F;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.523);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+body {
+  width: 100vw;
+  background: url(images/backgr.png);
+  background-position: center;
+  font-family: "Crimson Text", serif;
+  overflow-x: hidden;
+  padding: 5px 0 0 0;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  margin-top: -8px;
+  height: 110px;
+  gap: 0px;
+}
+
+h2 {
+  font-family: "Crimson Text", serif;
+  font-weight: 600;
+  font-style: normal;
+  text-transform: uppercase;
+  font-size: 35px;
+  color: #fff;
+}
+
+h2:hover {
+    background: linear-gradient(
+        90deg,
+        #ee82ee,
+        #9500ff,
+        #4bb7ff,
+        #01ffbb,
+        #ffd500,
+        #ffcc00,
+        #ff8282,
+        #cc00ff
+      );
+      background-size: 80%;
+      -webkit-background-clip: text;
+      color: transparent;
+      font-weight: 600;
+      cursor: pointer;
+}
+
+h3 {
+  color: #fff;
+  font-weight: 400;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+section {
+  width: 100vw;
+  height: auto;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-family: "Crimson Text", serif;
+  font-weight: 400;
+  font-style: normal;
+  text-transform: uppercase;
+  font-size: 88px;
+  color: #fff;
+  align-self: center;
+}
+
+.rainbow-text {
+  background: linear-gradient(
+    90deg,
+    #ee82ee,
+    #9500ff,
+    #4bb7ff,
+    #01ffbb,
+    #ffd500,
+    #ffcc00,
+    #ff8282,
+    #cc00ff
+  );
+  background-size: 80%;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-weight: 600;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+
+a {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 11px;
+  text-decoration: none;
+  padding: 8px;
+  border-radius: 5px;
+  align-self: baseline;
+  font-weight: 200;
+}
+
+a:hover {
+  transform: scale(1.1);
+  transition: 0.2s ease-in-out;
+  font-weight: 600;
+}
+
+a:not(:hover) {
+  transition: 0.15s ease-in-out;
+}
+
+a:nth-child(1):hover {
+  background-color: #d6662c;
+}
+
+a:nth-child(2):hover {
+  background-color: #fff;
+  color: #000;
+}
+
+a:nth-child(3):hover {
+  background-color: #000139;
+}
+
+a:nth-child(4):hover {
+  background-color: #c50000;
+}
+
+a:nth-child(5):hover {
+  background-color: #e32d6b;
+  color: #dcdede;
+}
+
+a:nth-child(6):hover {
+  background-color: #172e45;
+  color: #dcdede;
+}
+
+a:nth-child(7):hover {
+  background: linear-gradient(
+    90deg,
+    #4bb7ffb2,
+    #01ffbbb4,
+    #ffd500b8,
+    #ffcc00ba,
+    #ff8282b6,
+    #cc00ffb7
+  );
+  color: #ffffff;
+}
+
+a:nth-child(8):hover {
+  background-color: #5b5758;
+  color: #dcdede;
+}
+
+a:nth-child(9):hover {
+  background: linear-gradient(90deg, #000c40, #000c40, #000c40, #1428a2);
+  color: #dcdede;
+}
+
+a:nth-child(10):hover {
+  background: linear-gradient(90deg, #0088c0, #0088c0, #e719ff, #0088c0);
+  background-size: 180%;
+  background-color: #0088c0;
+  color: #dcdede;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  margin: 0;
+}
+
+.biograph {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px;
+  padding-bottom: 0;
+  text-align: justify;
+  gap: 25px;
+  width: 100%;
+}
+
+.p-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #00000058;
+  height: 480px;
+  margin-right: -10%;
+  border-radius: 15px;
+}
+
+p {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 30px;
+  word-break: keep-all;
+  font-family: "Montserrat", sans-serif;
+  max-width: 80%;
+  margin-right: 10%;
+}
+
+.bandafoto {
+  width: 850px;
+  margin-left: -10%;
+  border-radius: 15px;
+  filter: grayscale(0);
+  transition: 0.8s;
+}
+
+.bandafoto:hover {
+    transition: 0.3s;
+    filter: grayscale(0.9);
+    transition: 0.8s;
+}
