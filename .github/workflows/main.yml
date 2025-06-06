@@ -1,0 +1,18 @@
+name: Metrics Embed
+
+on:
+  schedule:
+    - cron: '0 3 * * *'  
+  workflow_dispatch:    
+
+jobs:
+  embed-metrics:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Metrics embed
+        uses: lowlighter/metrics@v3.34
+        with:
+          username: edu-lopes
